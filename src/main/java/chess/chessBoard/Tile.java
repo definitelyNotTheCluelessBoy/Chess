@@ -1,5 +1,7 @@
 package chess.chessBoard;
 
+import chess.chessBoard.ChessBoardPieces.ChessBoardPiece;
+
 public class Tile {
     private ChessBoardPiece pieceOnTile;
     private final int xCoordinates;
@@ -31,5 +33,9 @@ public class Tile {
         ChessBoardPiece temp = this.pieceOnTile;
         this.pieceOnTile = null;
         return temp;
+    }
+
+    public ChessBoardPiece getPieceOnTile() {
+        return pieceOnTile;
     }
 }

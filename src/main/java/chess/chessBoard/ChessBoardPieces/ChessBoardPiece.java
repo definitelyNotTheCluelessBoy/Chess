@@ -1,4 +1,6 @@
-package chess.chessBoard;
+package chess.chessBoard.ChessBoardPieces;
+import chess.chessBoard.Tile;
+import java.util.ArrayList;
 
 public abstract class ChessBoardPiece {
     private int xCoordinates;
@@ -23,5 +25,5 @@ public abstract class ChessBoardPiece {
         return yCoordinates;
     }
 
-    public abstract void viableFields();
+    public abstract ArrayList<Tile> fieldsInReach(Tile[][] tiles);
 }
